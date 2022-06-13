@@ -4,7 +4,6 @@ test('tests should be working', () => {
   expect(1).toBe(1);
 });
 
-/*
 test('should not accept non-numbers', () => {
   expect(() => {
     roman.convertToRoman('not a number');
@@ -63,4 +62,3 @@ test('should handle random number', () => {
 
   expect(roman.convertToDecimal(romanValue)).toBe(decimalValue);
 });
-*/
