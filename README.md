@@ -16,11 +16,6 @@ From [Wikipedia](https://en.wikipedia.org/wiki/Roman_numerals)
 
 > _Note that Roman numerals are not defined for zero or negative numbers!_
 
-## Project setup
-
-- Create the project from scratch using a suitable package and builder tool (maven/gradle/npm/yarn).
-- Remember to include test tools and get a sanity test working as soon as possible.
-
 ## The solution
 
 Build a small utility that can convert Arabic numbers to Roman numerals. Develop the solution by using a [TDD](https://www.codecademy.com/articles/tdd-red-green-refactor) style.

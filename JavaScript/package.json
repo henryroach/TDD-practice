@@ -1,0 +1,21 @@
+{
+  "name": "roman",
+  "version": "1.0.0",
+  "author": "Emil Breding",
+  "description": "A converter from 10-based numbers to Roman numbers",
+  "license": "MIT",
+  "scripts": {
+    "lint": "eslint ./",
+    "test": "jest --collectCoverage",
+    "watch": "jest --watchAll",
+    "mutate": "npx stryker run"
+  },
+  "devDependencies": {
+    "@stryker-mutator/core": "^6.0.2",
+    "@stryker-mutator/jest-runner": "^6.0.2",
+    "eslint": "^8.17.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "jest": "^28.1.1"
+  }
+}
