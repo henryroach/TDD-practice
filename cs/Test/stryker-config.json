@@ -1,0 +1,6 @@
+{
+    "stryker-config": {
+        "solution": "../cygni-tdd-practice.sln",
+        "project": "Src.csproj"
+    }
+}
