@@ -9,54 +9,54 @@ public class RomanTest
 		Assert.Equal(1, 1);
 	}
 
-	// [Fact]
-	// public void ShouldNotAcceptNonNumbers()
-	// {
-	// 	var exception = Assert.Throws<ArgumentException>(() => Roman.toRoman("Not a number"));
-	// 	Assert.Contains("Not a number", exception.Message);
-	// }
+	[Fact]
+	public void ShouldNotAcceptNonNumbers()
+	{
+		var exception = Assert.Throws<ArgumentException>(() => Roman.ToRoman("Not a number"));
+		Assert.Contains("Not a number", exception.Message);
+	}
 
-	// [Fact]
-	// public void ShouldNotAcceptNumbersBelowOne()
-	// {
-	// 	var exception = Assert.Throws<ArgumentException>(() => Roman.toRoman("0"));
-	// 	Assert.Contains("Too small", exception.Message);
-	// }
+	[Fact]
+	public void ShouldNotAcceptNumbersBelowOne()
+	{
+		var exception = Assert.Throws<ArgumentException>(() => Roman.ToRoman("0"));
+		Assert.Contains("Too small", exception.Message);
+	}
 
-	// [Fact]
-	// public void ShouldConvertSmallNumberToRoman()
-	// {
-	// 	var romanValue = Roman.toRoman("1");
-	// 	Assert.Equal("I", romanValue);
-	// }
+	[Fact]
+	public void ShouldConvertSmallNumberToRoman()
+	{
+		var romanValue = Roman.ToRoman("1");
+		Assert.Equal("I", romanValue);
+	}
 
-	// [Fact]
-	// public void ShouldConvertNumberThatRequiresAdditionToRoman()
-	// {
-	// 	var romanValue = Roman.toRoman("15");
-	// 	Assert.Equal("XV", romanValue);
-	// }
+	[Fact]
+	public void ShouldConvertNumberThatRequiresAdditionToRoman()
+	{
+		var romanValue = Roman.ToRoman("15");
+		Assert.Equal("XV", romanValue);
+	}
 
-	// [Fact]
-	// public void ShouldConvertNumberThatRequiresSubtractionToRoman()
-	// {
-	// 	var romanValue = Roman.toRoman("4");
-	// 	Assert.Equal("IV", romanValue);
-	// }
+	[Fact]
+	public void ShouldConvertNumberThatRequiresSubtractionToRoman()
+	{
+		var romanValue = Roman.ToRoman("4");
+		Assert.Equal("IV", romanValue);
+	}
 
-	// [Fact]
-	// public void ShouldConvertLargeNumberToRoman()
-	// {
-	// 	var romanValue = Roman.toRoman("1776");
-	// 	Assert.Equal("MDCCLXXVI", romanValue);
-	// }
+	[Fact]
+	public void ShouldConvertLargeNumberToRoman()
+	{
+		var romanValue = Roman.ToRoman("1776");
+		Assert.Equal("MDCCLXXVI", romanValue);
+	}
 
-	// [Fact]
-	// public void ShoudHandleShortHand()
-	// {
-	// 	var romanValue = Roman.toRoman("94");
-	// 	Assert.Equal("XCIV", romanValue);
-	// }
+	[Fact]
+	public void ShouldHandleShortHand()
+	{
+		var romanValue = Roman.ToRoman("94");
+		Assert.Equal("XCIV", romanValue);
+	}
 
 	// [Fact]
 	// public void ShouldConvertSmallRomanValueToDecimal()

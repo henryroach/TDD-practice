@@ -10,7 +10,7 @@ try
 
 	var number = args[0];
 
-	Console.WriteLine($"{number} in roman is: {Roman.toRoman(number)}");
+	Console.WriteLine($"{number} in roman is: {Roman.ToRoman(number)}");
 }
 catch (Exception e)
 {
